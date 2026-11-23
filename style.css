@@ -1,3 +1,24 @@
+:focus-visible {
+  outline: 0.1875rem solid #005fcc;
+  outline-offset: 0.1875rem;
+  border-radius: 0.25rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0.5rem;
+  z-index: 1000;
+  padding: 0.75rem 1rem;
+  background-color: #005fcc;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.skip-link:focus-visible {
+  left: 0.5rem;
+}
 @media (min-width: 40em) {
   /* TODO */
 }
